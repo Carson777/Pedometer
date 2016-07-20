@@ -12,6 +12,7 @@
 		435AFA221D3EA3A5008C2035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435AFA201D3EA3A5008C2035 /* Main.storyboard */; };
 		435AFA241D3EA3A5008C2035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435AFA231D3EA3A5008C2035 /* Assets.xcassets */; };
 		435AFA271D3EA3A5008C2035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435AFA251D3EA3A5008C2035 /* LaunchScreen.storyboard */; };
+		435AFA311D3EA426008C2035 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435AFA301D3EA426008C2035 /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		435AFA231D3EA3A5008C2035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435AFA261D3EA3A5008C2035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		435AFA281D3EA3A5008C2035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		435AFA301D3EA426008C2035 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				435AFA1C1D3EA3A5008C2035 /* AppDelegate.swift */,
+				435AFA301D3EA426008C2035 /* GraphView.swift */,
 				435AFA1E1D3EA3A5008C2035 /* ViewController.swift */,
 				435AFA201D3EA3A5008C2035 /* Main.storyboard */,
 				435AFA231D3EA3A5008C2035 /* Assets.xcassets */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					435AFA181D3EA3A5008C2035 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 28MK7H5SR4;
 					};
 				};
 			};
@@ -136,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				435AFA1F1D3EA3A5008C2035 /* ViewController.swift in Sources */,
+				435AFA311D3EA426008C2035 /* GraphView.swift in Sources */,
 				435AFA1D1D3EA3A5008C2035 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,10 +256,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pedometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orgID.Pedometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pedometer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orgID.Pedometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
